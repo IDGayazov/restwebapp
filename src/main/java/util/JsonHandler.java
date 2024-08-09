@@ -31,7 +31,6 @@ public class JsonHandler {
         String objectJson = objectMapper.writeValueAsString(object);
 
         PrintWriter writer = response.getWriter();
-
         writer.print(objectJson);
         writer.close();
     }
